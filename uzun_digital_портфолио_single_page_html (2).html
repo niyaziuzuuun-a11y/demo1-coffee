@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Uzun Digital — Дигитален създател</title>
+  <meta name="description" content="Uzun Digital — Изработка на сайтове, Управление на социални мрежи, Добавяне в Google Maps. Свържете се в WhatsApp." />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent1:linear-gradient(135deg,#7ce7c8 0%,#6ec2ff 50%, #c07bff 100%);
+      --accent2:linear-gradient(135deg,#ffd86b 0%,#ff7bb5 100%);
+      --glass: rgba(255,255,255,0.04);
+      --text:#e6eef8;
+      --muted:#b7c2d6;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background: radial-gradient(1200px 600px at 10% 10%, rgba(124,231,200,0.06), transparent), radial-gradient(900px 400px at 90% 90%, rgba(192,123,255,0.04), transparent), #07111a; color:var(--text); -webkit-font-smoothing:antialiased}
+    .container{max-width:1000px; margin:32px auto; padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:54px;height:54px;border-radius:12px;background:var(--accent1);display:flex;align-items:center;justify-content:center;color:#021018;font-weight:700;font-size:20px;box-shadow:0 6px 18px rgba(2,16,24,0.6)}
+    h1{font-size:28px;margin:0}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:center;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:22px;border-radius:14px;box-shadow:0 6px 30px rgba(2,8,23,0.5);backdrop-filter: blur(6px)}
+
+    .hero-left h2{font-size:22px;margin:0 0 10px}
+    .hero-left p{color:var(--muted);margin:0 0 18px}
+    .cta-row{display:flex;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:999px;border:0;cursor:pointer;font-weight:600;text-decoration:none}
+    .btn-primary{background:var(--accent1);color:#021018}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+    .svc{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.03)}
+    .svc h3{margin:0 0 6px}
+    .svc p{margin:0;color:var(--muted);font-size:14px}
+
+    .about-portfolio{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+    .about{padding:18px;border-radius:12px}
+    .portfolio{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .proj{height:120px;border-radius:10px;overflow:hidden;display:flex;align-items:flex-end;padding:12px;color:#021018;font-weight:700;text-decoration:none}
+    .proj.small{height:86px}
+
+    .footer{margin-top:26px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .muted{color:var(--muted);font-size:13px}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .about-portfolio{grid-template-columns:1fr}
+      .services{grid-template-columns:1fr}
+      .portfolio{grid-template-columns:1fr}
+    }
+
+    .fade-up{opacity:0;transform:translateY(8px);transition:all 520ms cubic-bezier(.2,.9,.3,1)}
+    .fade-up.show{opacity:1;transform:none}
+
+    .g1{background: linear-gradient(135deg,#7ce7c8,#6ec2ff)}
+    .g2{background: linear-gradient(135deg,#ffd86b,#ff7bb5)}
+    .g3{background: linear-gradient(135deg,#c07bff,#7ce7c8)}
+    .g4{background: linear-gradient(135deg,#6ec2ff,#ffd86b)}
+
+    .contact-bubble{position:fixed;right:20px;bottom:20px;border-radius:999px;z-index:60}
+    .contact-bubble a{display:block;padding:14px 18px;background:var(--accent2);color:#081124;border-radius:999px;font-weight:700;box-shadow:0 8px 24px rgba(1,8,20,0.5)}
+
+    .tiny{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">UZ</div>
+        <div>
+          <h1>Uzun Digital</h1>
+          <p class="lead">Дигитален създател — Изработка на сайтове · Управление на социални мрежи · Добавяне в Google Maps</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn btn-ghost" href="#contact">Свържи се</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left card">
+          <h2>Здравей — аз съм Niyazi Uzun</h2>
+          <p>Правя лесни и модерни уеб решения за малкия бизнес. Помагам ти да имаш професионално онлайн присъствие бързо и на добра цена.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://wa.me/358894239824" target="_blank">Свържи се в WhatsApp</a>
+            <button class="btn btn-ghost" onclick="scrollToSection('services')">Услуги</button>
+          </div>
+
+          <div class="services" id="services" style="margin-top:18px">
+            <div class="svc fade-up">
+              <h3>💻 Изработка на сайтове</h3>
+              <p>Прост, бърз и адаптивен сайт — подходящ за презентация и продажби.</p>
+            </div>
+            <div class="svc fade-up">
+              <h3>📱 Управление на социални мрежи</h3>
+              <p>Публикации, базов графичен дизайн и комуникация с клиенти.</p>
+            </div>
+            <div class="svc fade-up">
+              <h3>📍 Добавяне в Google Maps</h3>
+              <p>Добавям бизнеса ти с правилни данни и снимки, за да те откриват лесно.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h3 style="margin-top:0">Бърз преглед</h3>
+          <p class="tiny">Цена (пример):</p>
+          <ul class="tiny" style="margin:8px 0 12px;padding-left:18px;color:var(--muted)">
+		  <li>Добавяне на бизнеса ви в Google Maps 30-60лв.</li>
+            <li>Ландинг страница — 40-60 лв.</li>
+            <li>Мултистраничен сайт — 100-130 лв.</li>
+            <li>Управление на соц. мрежи — по договаряне.</li>
+          </ul>
+          <p class="tiny">Работя с млади бизнеси в цяла България. Мога да покажа демо сайтове при поискване.</p>
+        </aside>
+      </section>
+
+      <section class="about-portfolio">
+        <div class="about card fade-up">
+          <h3>За мен</h3>
+          <p class="muted">Казвам се Niyazi Uzun. Създавам уеб и дигитални решения за местни бизнеси — лесно, бързо и достъпно. Ако имаш нужда от сайт или помощ със социални мрежи, мога да помогна.</p>
+          <p style="margin-top:12px" class="tiny">Местоположение: Севлиево / Габрово</p>
+        </div>
+
+        <div class="portfolio">
+          <a class="proj g1" href="file:///C:/Users/PC-9/Downloads/demo_project_1_coffee_corner.html#contact" target="_blank">Демо проект 1</a>
+          <a class="proj g2 small" href="https://www.w3schools.com" target="_blank">Демо проект 2</a>
+          <a class="proj g3" href="https://html5up.net" target="_blank">Демо проект 3</a>
+          <a class="proj g4 small" href="https://www.example.org" target="_blank">Демо проект 4</a>
+        </div>
+      </section>
+
+      <section id="contact" class="card fade-up" style="margin-top:18px;padding:18px">
+        <h3>Контакт</h3>
+        <p class="muted">Най-бързо: WhatsApp</p>
+        <p style="margin:8px 0"><a class="btn btn-primary" href="https://wa.me/0894239824" target="_blank">Пиши ми в WhatsApp</a></p>
+      </section>
+
+      <footer class="footer">
+        <div class="muted">© Uzun Digital — Портфолио</div>
+      </footer>
+
+    </main>
+  </div>
+
+  <div class="contact-bubble">
+    <a href="https://wa.me/0894239824" target="_blank">WhatsApp</a>
+  </div>
+
+  <script>
+    function scrollToSection(id){
+      document.getElementById(id).scrollIntoView({behavior:'smooth'});
+    }
+
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('show') })
+    },{threshold:0.12});
+    document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+  </script>
+</body>
+</html>
